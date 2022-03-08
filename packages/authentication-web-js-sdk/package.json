@@ -1,0 +1,44 @@
+{
+  "name": "@authing/authentication-web-js-sdk",
+  "version": "5.0.0-alpha.0",
+  "description": "Authing JS SDK for browser",
+  "main": "dist/authentication-web-js-sdk.cjs.js",
+  "module": "dist/authentication-web-js-sdk.esm-bundler.js",
+  "types": "dist/authentication-web-js-sdk.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "buildOptions": {
+    "name": "AuthingAuthenticationSDK",
+    "formats": [
+      "esm-bundler",
+      "esm-browser",
+      "cjs",
+      "global",
+      "amd",
+      "umd"
+    ]
+  },
+  "dependencies": {
+    "@authing/authentication-common-js-sdk": "^5.0.0-alpha.0",
+    "@authing/shared": "^5.0.0-alpha.0",
+    "@authing/http-web": "^5.0.0-alpha.0"
+  },
+  "keywords": [
+    "authentication-web-js-sdk"
+  ],
+  "author": "https://github.com/authing",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/authing/authing-js-sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/authing/authing-js-sdk/issues"
+  }
+}

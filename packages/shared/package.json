@@ -1,0 +1,34 @@
+{
+  "name": "@authing/shared",
+  "version": "5.0.0-alpha.0",
+  "description": "Internal shared across @authing packages",
+  "main": "dist/shared.cjs.js",
+  "module": "dist/shared.esm-bundler.js",
+  "types": "dist/shared.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "buildOptions": {
+    "formats": [
+      "esm-bundler",
+      "cjs"
+    ]
+  },
+  "keywords": [
+    "authing shared"
+  ],
+  "author": "https://github.com/authing",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/authing/authing-js-sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/authing/authing-js-sdk/issues"
+  }
+}

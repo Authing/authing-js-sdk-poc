@@ -1,0 +1,40 @@
+{
+  "name": "@authing/authentication-miniapp-js-sdk",
+  "version": "5.0.0-alpha.0",
+  "description": "Authing JS SDK for miniapp",
+  "main": "dist/authentication-miniapp-js-sdk.cjs.js",
+  "module": "dist/authentication-miniapp-js-sdk.esm-bundler.js",
+  "types": "dist/authentication-miniapp-js-sdk.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "buildOptions": {
+    "formats": [
+      "esm-bundler",
+      "cjs"
+    ]
+  },
+  "dependencies": {
+    "@authing/authentication-common-js-sdk": "^5.0.0-alpha.0",
+    "@authing/http-miniapp": "^5.0.0-alpha.0",
+    "@authing/shared": "^5.0.0-alpha.0"
+  },
+  "keywords": [
+    "authentication-miniapp-js-sdk"
+  ],
+  "miniprogram": "authentication-miniapp-js-sdk",
+  "author": "https://github.com/authing",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/authing/authing-js-sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/authing/authing-js-sdk/issues"
+  }
+}

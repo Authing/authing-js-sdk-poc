@@ -1,0 +1,35 @@
+{
+  "name": "@authing/http-miniapp",
+  "version": "5.0.0-alpha.0",
+  "description": "Http lib for miniapp",
+  "main": "dist/http-miniapp.cjs.js",
+  "module": "dist/http-miniapp.esm-bundler.js",
+  "types": "dist/http-miniapp.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "buildOptions": {
+    "formats": [
+      "esm-bundler",
+      "cjs"
+    ]
+  },
+  "keywords": [
+    "http-miniapp"
+  ],
+  "miniprogram": "http-miniapp",
+  "author": "https://github.com/authing",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/authing/authing-js-sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/authing/authing-js-sdk/issues"
+  }
+}
