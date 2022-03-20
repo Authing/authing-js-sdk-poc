@@ -1,6 +1,7 @@
 import {
   AuthenticationSDKConfig,
   createSDKRunInMiniapp,
+  DEFAULT_AUTHENTICATION_CONFIG,
   MiniappSDK,
   pushSDK
 } from '@authing/shared'
@@ -12,10 +13,9 @@ export * from '@authing/authentication-common-js-sdk'
 export function initAuthenticationSDK(
   config: AuthenticationSDKConfig
 ): MiniappSDK {
-  const http = new HttpMiniapp({
-    appId: ''
-  })
-  const sdk = createSDKRunInMiniapp(config, http)
+  const _config = Object.assign({}, DEFAULT_AUTHENTICATION_CONFIG, config)
+  const http = new HttpMiniapp(_config)
+  const sdk = createSDKRunInMiniapp(_config, http)
 
   pushSDK(sdk)
 

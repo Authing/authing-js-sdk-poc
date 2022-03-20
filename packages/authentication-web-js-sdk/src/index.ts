@@ -15,7 +15,7 @@ export function initAuthenticationSDK(config: AuthenticationSDKConfig): WebSDK {
   const _config = Object.assign({}, DEFAULT_AUTHENTICATION_CONFIG, config)
   const identityProvider = createAuthenticationIdentityProvider(_config)
   const http = new HttpWeb(_config, identityProvider)
-  const sdk = createSDKRunInWeb(config, http)
+  const sdk = createSDKRunInWeb(_config, http)
 
   pushSDK(sdk)
 
