@@ -1,5 +1,5 @@
 export function getMiniappContext(): WxMiniApp.Wx | undefined {
-  // temporary process, need to condition compiler
+  // process temporarily, finally need to condition compiler
   if (window) {
     return
   }
