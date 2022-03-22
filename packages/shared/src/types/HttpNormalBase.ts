@@ -1,7 +1,8 @@
 import { AxiosRequestConfig, AxiosInstance } from 'axios'
 import { AuthingResponseData } from './Response'
-import { AuthenticationIdentityProvider, ManagementIdentityProvider } from '../TokenProvider'
-import { AuthenticationSDKConfig, ManagementSDKConfig } from '.'
+import { AuthenticationIdentityProvider, ManagementIdentityProvider } from '../IdentityProvider'
+import { AuthenticationSDKConfig } from './AuthenticationSDKConfig'
+import { ManagementSDKConfig } from './ManagementSDKConfig'
 export interface AxiosFetch {
   config: AuthenticationSDKConfig | ManagementSDKConfig
   identityProvider: AuthenticationIdentityProvider | ManagementIdentityProvider
