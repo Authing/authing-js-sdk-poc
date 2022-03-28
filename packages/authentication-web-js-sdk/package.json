@@ -20,11 +20,6 @@
       "umd"
     ]
   },
-  "peerDependencies": {
-    "@authing/authentication-common-js-sdk": "^5.0.0-alpha.0",
-    "@authing/shared": "^5.0.0-alpha.0",
-    "@authing/http-web": "^5.0.0-alpha.0"
-  },
   "keywords": [
     "authentication-web-js-sdk"
   ],
