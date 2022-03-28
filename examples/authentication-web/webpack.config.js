@@ -26,7 +26,7 @@ module.exports = {
     openPage: '../',
     proxy: {
       '/': {
-        target: 'console.authing.localhost:3000',
+        target: 'localhost:3000',
         changeOrigin: true,
         secure: false
       }

@@ -15,7 +15,7 @@
       "cjs"
     ]
   },
-  "dependencies": {
+  "peerDependencies": {
     "@authing/shared": "^5.0.0-alpha.0"
   },
   "keywords": [

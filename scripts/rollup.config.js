@@ -95,11 +95,6 @@ function createConfig(format, output, plugins = []) {
 
   const entryFile = 'src/index.ts'
 
-  const external = [
-    ...Object.keys(pkg.dependencies || {}),
-    ...Object.keys(pkg.peerDependencies || {})
-  ]
-
   const config = {
     input: resolve(entryFile),
     output,
@@ -117,7 +112,7 @@ function createConfig(format, output, plugins = []) {
       ...plugins,
       createReplacePlugin(SDK_VERSION)
     ],
-    external,
+    external: ['axios'],
     treeshake: {
       moduleSideEffects: false
     },

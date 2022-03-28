@@ -33,9 +33,6 @@
     "url": "https://github.com/authing/authing-js-sdk/issues"
   },
   "peerDependencies": {
-    "axios": "^0.26.0"
-  },
-  "dependencies": {
     "@authing/shared": "^5.0.0-alpha.0"
   }
 }

@@ -15,9 +15,6 @@
       "cjs"
     ]
   },
-  "peerDependencies": {
-    "axios": "^0.26.0"
-  },
   "keywords": [
     "http-node"
   ],

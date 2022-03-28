@@ -37,7 +37,7 @@ export class HttpWebClient implements AxiosFetch {
         // const appId =
         //   this.config?.headers?.['app-id'] ||
         //   DEFAULT_AUTHENTICATION_CONFIG.headers
-        config.baseURL = 'http://console.authing.localhost:3000'
+        config.baseURL = 'http://localhost:3000'
         config.headers = {
           // 'x-authing-userpool-id': '61b95d6c96d42670da568408',
           // Authorization:
