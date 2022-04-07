@@ -2,13 +2,13 @@ import {
   AuthenticationSDKConfig,
   createSDKRunInWeb,
   WebSDK,
-  pushSDK,
   DEFAULT_AUTHENTICATION_CONFIG,
   createAuthenticationIdentityProvider
 } from '@authing/shared'
 
 import { HttpWeb } from '@authing/http-web'
 
+import { pushSDK } from '@authing/authentication-common-js-sdk'
 export * from '@authing/authentication-common-js-sdk'
 
 export function initAuthenticationSDK(config: AuthenticationSDKConfig): WebSDK {

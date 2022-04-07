@@ -2,13 +2,13 @@ import {
   AuthenticationSDKConfig,
   createSDKRunInNode,
   NodeSDK,
-  pushSDK,
   DEFAULT_AUTHENTICATION_CONFIG,
   createAuthenticationIdentityProvider
 } from '@authing/shared'
 
 import { HttpNode } from '@authing/http-node'
 
+import { pushSDK } from '@authing/authentication-common-js-sdk'
 export * from '@authing/authentication-common-js-sdk'
 
 export function initAuthenticationSDK(

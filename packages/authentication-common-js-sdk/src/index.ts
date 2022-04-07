@@ -1,4 +1,7 @@
-import { findSDK, SDK, AuthingResponseData } from '@authing/shared'
+import { SDK, AuthingResponseData } from '@authing/shared'
+import { findSDK } from './sdk-pool'
+
+export * from './sdk-pool'
 
 interface CheckPasswordStrengthResult {
   valid: boolean

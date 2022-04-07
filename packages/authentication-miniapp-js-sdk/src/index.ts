@@ -2,12 +2,12 @@ import {
   AuthenticationSDKConfig,
   createSDKRunInMiniapp,
   DEFAULT_AUTHENTICATION_CONFIG,
-  MiniappSDK,
-  pushSDK
+  MiniappSDK
 } from '@authing/shared'
 
 import { HttpMiniapp } from '@authing/http-miniapp'
 
+import { pushSDK } from '@authing/authentication-common-js-sdk'
 export * from '@authing/authentication-common-js-sdk'
 
 export function initAuthenticationSDK(

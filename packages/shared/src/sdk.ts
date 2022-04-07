@@ -1,5 +1,4 @@
 import {
-  SDK,
   BaseSDK,
   AuthenticationSDKConfig,
   ManagementSDKConfig,
@@ -7,17 +6,6 @@ import {
   HttpMiniappBase
 } from './types'
 import { encrypt } from './encrypt'
-
-// Here, Array is more suitable than Map
-const cachedSDK: SDK[] = []
-
-export function pushSDK(sdk: SDK): void {
-  cachedSDK.push(sdk)
-}
-
-export function findSDK(sdk?: SDK): SDK {
-  return cachedSDK.find(item => item === sdk) || cachedSDK[0]
-}
 
 function createSDK<C, H>(config: C, http: H): BaseSDK<C, H> {
   const sdk: BaseSDK<C, H> = {
