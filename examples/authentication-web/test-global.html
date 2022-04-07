@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <script src="../../packages/authentication-web-js-sdk//dist/authentication-web-js-sdk.global.js"></script>
+  <script>
+    const sdk1 = AuthingAuthenticationSDK.initAuthenticationSDK({
+      appId: 'appId1'
+    })
+
+    AuthingAuthenticationSDK.checkPasswordStrength('123')
+      .catch(error => {
+        console.log('error: ', error)
+      })
+      .then(res => {
+        console.log('sdk1 res: ', res)
+      })
+
+    const sdk2 = AuthingAuthenticationSDK.initAuthenticationSDK({
+      appId: 'appId2'
+    })
+
+    AuthingAuthenticationSDK.checkPasswordStrength('456', sdk2)
+      .catch(error => {
+        console.log('error: ', error)
+      })
+      .then(res => {
+        console.log('sdk2 res: ', res)
+      })
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
